@@ -18,8 +18,16 @@ Only `*.md` files would be read ([Markdown format](https://daringfireball.net/pr
 
 # Usage
 
+## To generate HTML
+
 ```bash
 make clean && make
+```
+
+## To generate PDF
+
+```bash
+make clean && DOC_FORMAT=pdf make
 ```
 
 # Variables
