@@ -8,6 +8,14 @@ Document's content is available under **content** directory.
 
 Only `*.md` files would be read ([Markdown format](https://daringfireball.net/projects/markdown/)).
 
+# Depenencies
+
+## ArchLinux
+
+* texlive-core
+* texlive-latexextra (for pdflatex)
+* texlive-fontsrecommended (for utopia font)
+
 # Usage
 
 ```bash
@@ -19,6 +27,12 @@ make clean && make
 TODO: complete this section
 
 # Add page break
+
+## PDF
+
+Just add `\newpage` where you want to make a page break.
+
+## DOCX
 
 With [pandoc's raw\_attribute plugin](https://pandoc.org/MANUAL.html#extension-raw_attribute), just add this in Markdown files:
 

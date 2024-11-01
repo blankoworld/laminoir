@@ -4,6 +4,8 @@ subtitle: Exemple de compte-rendu
 date: 2024-11-01
 description: Exemple de document fait avec pandoc en Markdown
 author: Olivier DOSSMANN
+mail: example@domain.tld
+version: 1.0.0
 ---
 # Ordre du jour
 
@@ -25,6 +27,8 @@ author: Olivier DOSSMANN
 * Avancées : Ticket *123*, *456* et *789*
 * Prochaine réunion : dans 15 jours
 
+\newpage
+
 # Exemple de code
 
 ```bash
@@ -34,3 +38,12 @@ echo "bonjour ici"
 ---
 
 Cf. [Markdown documentation](https://daringfireball.net/projects/markdown/)
+
+\newpage
+
+# Divers
+
+| Column 1      | Column 2      |
+| ------------- | ------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 |
+| Cell 1, Row 2 | Cell 1, Row 2 |
