@@ -33,20 +33,18 @@ FONT_SIZE ?= 11pt
 LATEX_TEMPLATE ?= templates/default.latex
 
 # START
-default: final
+default: public/${NAME}.${DOC_FORMAT}
 
 public:
 	$Qmkdir public
 
-html: public ${CONTENT_LIST}
+public/${NAME}.html: public ${CONTENT_LIST}
 	$Qecho "[PREPA] HTML      : contenu"
 	$Qpandoc -s --toc -V toc-title:'${TOC_TITLE}' --from=markdown+raw_attribute --highlight-style ${HL_THEME} --to=html -o "public/${NAME}.html" ${CONTENT_LIST}
 
-pdf: public ${CONTENT_LIST}
+public/${NAME}.pdf: public ${CONTENT_LIST}
 	$Qecho "[PREPA] PDF       : contenu"
 	$Qpandoc -V colorlinks -V fontfamily="${FONT_FAMILY}" -V fontsize="${FONT_SIZE}" -V classoption:twoside --number-sections -V graphics --template="${LATEX_TEMPLATE}" --toc -V toc-title:'${TOC_TITLE}' -V papersize:a4 --from=markdown --to=latex -o "public/${NAME}.pdf" ${CONTENT_LIST}
-
-final: ${DOC_FORMAT}
 
 # END
 .PHONY: clean
