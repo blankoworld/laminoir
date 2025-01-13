@@ -406,7 +406,12 @@ $else$
 
     % Affichage des infos de la page de garde
     \centering
-    {\huge\bfseries $title$\par}
+    {\huge\bfseries $title$\par
+    % sous-titre si 'subtitle:' existe
+    $if(subtitle)$
+      $subtitle$\par
+    $endif$
+    }
 	  \vspace{2cm}
     {\Large\itshape $author$\par
       $mail$
