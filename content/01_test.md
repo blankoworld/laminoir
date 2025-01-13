@@ -7,12 +7,17 @@ author: Olivier DOSSMANN
 mail: example@domain.tld
 version: 1.0.0
 ---
+
+\newpage
+
 # Ordre du jour
 
 * Présentation
 * Problème organisation
 * Avancées du projet
 * Prochaine réunion
+
+\newpage
 
 # Déroulement
 
