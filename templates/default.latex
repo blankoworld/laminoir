@@ -396,7 +396,7 @@ $if(beamer)$
 \frame{\titlepage}
 $else$
 
-% Päge de garde
+% Page de garde
 \begin{titlepage}
     % Encart en haut à gauche
     \setlength{\unitlength}{1mm}
