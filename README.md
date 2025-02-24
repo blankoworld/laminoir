@@ -8,7 +8,7 @@ Document's content is available under **content** directory.
 
 Only `*.md` files would be read ([Markdown format](https://daringfireball.net/projects/markdown/)).
 
-# Depenencies
+# Dependencies
 
 ## ArchLinux
 
